@@ -10,33 +10,69 @@ body{
     background-color: #e8e5e3;
 }
 /*ヘッダー*/
-.header {
+ .header{
+   position: fixed;
+   width: 100%;
+ } 
+ .headerbox{
     background-color: #e8e5e3;
-    box-sizing: border-box;
     width: 100%;
-    height: 120px;
-    border-bottom: solid black 1px;
+    height: 170px;
+    text-align: center;
+    z-index: 1;
   }
-  .box {
-    box-sizing: border-box;
+  .submenu{
+    font-size: 1.5rem;
+    margin: 1%;
+    position: absolute;
+    left: 0;
+    top:10px;
   }
-  
-  .box-logo {
+  .boxlogo {
+    background-color: #e8e5e3;
+  }
+  .logoimg {
+    width: 270px;
+    height: 130px;
+    margin-top: 1%;
+  }
+  .boxmenu{
+    width: 60%;
+    border-bottom: solid black 2px;
+    margin: auto;
+  }
+  ul.inner a{
+    text-decoration: none;
+    color: #07351c;
+  }
+  ul.inner a:hover{
+    color: teal;
+
+  }
+  ul.inner li{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0 4%;
+    font-family: 'Amiri', serif;
+  }
+  ul.subcontact li{
+    writing-mode: vertical-rl;
+    font-size: 2rem;
+    color: black;
+    z-index: 2;
+    padding: 1%;
+    list-style: none;
+  }
+  /*メイン*/
+  /*フッター*/
+  .footerbox{
+    width: 100%;
+    height: 150px;
+    background-color: #7f7f7f;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
   }
   
-  .logo-img {
-    width: 100px;
-  }
-  
-  .sp-nav {
-    display: none;
-  }
-  
-ul.innrbo
+
   
  
 
