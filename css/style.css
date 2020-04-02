@@ -44,8 +44,8 @@ body{
   }
   ul.inner{
     margin: auto;
-    width: 60%;
-    border-bottom: solid black 2px;
+    width: 100%;
+    border-bottom: solid black 1px;
   }
   ul.inner a{
     text-decoration: none;
@@ -61,23 +61,33 @@ body{
     padding: 0 4%;
     font-family: 'Amiri', serif;
   }
+  .contactbox{
+    width: 100%;
+
+  }
+  ul.subcontact{
+    width: 30px;
+    background:rgba(255,255,255,0.7);
+    margin: 1%;
+  }
   ul.subcontact li{
     writing-mode: vertical-rl;
     font-size: 2rem;
     color: black;
     z-index: 2;
-    padding: 1%;
+    padding: 5% 0;
     list-style: none;
   }
   /*メイン*/
   .mainbox{
-    padding-top: 200px;
+    padding-top: 150px;
     width: 100%;
     overflow: hidden;
+    margin: auto;
   }
   .slider{
     margin: 0 auto;
-    width: 110%;
+    width: 100%;
     z-index: 3;
     opacity: 0;
     transition: 3s;
@@ -90,23 +100,12 @@ body{
     height: auto;
     width: 100%;
     z-index: 3;
-    border: outset 5px rgba(236, 236, 236, 0.29);
-    box-shadow: 20px 20px 20px rgba(85, 83, 83, 0.29);
+    box-shadow: 0 0 10px rgb(100, 100, 100);
 }
-  .slider div{
-    padding: 0 1%;
-    margin-right: 110px;
+  .sliderimg{
+    padding: 8%;
   }
-.slider2{
-  margin: 0 auto;
-  width: 20%;
-  z-index: 3;
-}
-.slider2 img{
-  text-align: center;
-  height: auto;
-  width: 100%;
-}
+
 /*slick setting*/
 .slick-prev:before,
 .slick-next:before {
@@ -126,34 +125,133 @@ button{
 }
 .slide-arrow{
   position: absolute;
-  top: 40%;
+  top: 45%;
   margin-top: -15px;
 }
 .prev-arrow{
-  left: 150px;
+  left: 340px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
   border-right: 20px solid black;
   border-top: 35px solid transparent;
   border-bottom: 35px solid transparent;
-  z-index: 4;
+  z-index: 7;
 }
 .next-arrow{
-  right: 150px;
+  right: 340px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
   border-left: 20px solid black;
   border-top: 35px solid transparent;
   border-bottom: 35px solid transparent;
-  z-index: 5;
 }
-@media screen and ( min-width: 768px ) {
-  .carousel-cell img {
-    height: 400px;
-  }
+.feature{
+  width: 100%;
+  margin: auto;
 }
+.featurebox{
+  border-top: solid black 1px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2% 0;
+}
+.featurebox h2{
+  width: 100%;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-family: 'Roboto Slab', serif;
+}
+.submenu2{
+  list-style: none;
+}
+.slider2{
+  width: 100%;
+  z-index: 3;
+  padding: 4% 0;
+  margin: auto;
+}
+.slider2 img{
+  text-align: center;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.staffstyle{
+  width: 100%;
+  margin: auto;
+}
+.stylebox{
+  border-top: solid black 1px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2% 0;
+}
+.stylebox h2{
+  width: 100%;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-family: 'Roboto Slab', serif;
+}
+ul.slider2{
+  width: 100%;
+  z-index: 3;
+  padding: 4% 0;
+  margin: auto;
+}
+ul.slider2 img{
+  text-align: center;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+
+.news{
+  width: 100%;
+  margin: auto;
+}
+.newsbox{
+  border-top: solid black 1px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2% 0;
+}
+.newsmain{
+  width: 100%;
+  border-radius: 20px;
+}
+.newsmain img{
+  width: 100%;
+}
+.newsimg1{
+  width: 30%;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.newsimg2{
+  width: 20%;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.newsimg3{
+  width: 20%;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.newsbox h2{
+  width: 100%;
+  font-size: 2rem;
+  text-decoration: underline;
+  font-family: 'Roboto Slab', serif;
+}
+/*フッター*/
+.footerbox{
+  width: 100%;
+  height: 1000px;
+  background-color: #7f7f7f;
+}
+
   
  
 
