@@ -44,10 +44,11 @@ body{
   }
   ul.inner{
     margin: auto;
-    width: 100%;
+    width: 1000px;
     border-bottom: solid black 1px;
   }
   ul.inner a{
+   
     text-decoration: none;
     color: #07351c;
   }
@@ -56,14 +57,15 @@ body{
 
   }
   ul.inner li{
-    display: inline-block;
     font-size: 2rem;
     padding: 0 4%;
     font-family: 'Amiri', serif;
+    margin: auto;
+    list-style: none;
+    display: inline;
   }
   .contactbox{
     width: 100%;
-
   }
   ul.subcontact{
     width: 30px;
@@ -80,30 +82,36 @@ body{
   }
   /*メイン*/
   .mainbox{
-    padding-top: 150px;
+    padding-top: 165px;
     width: 100%;
+    height: auto;
     overflow: hidden;
     margin: auto;
+    box-sizing:border-box
   }
   .slider{
     margin: 0 auto;
-    width: 100%;
+    width: 1200px;
+    height: auto;
     z-index: 3;
     opacity: 0;
     transition: 3s;
 }
   .slick-initialized{
     opacity: 1;
-}
+} 
   .slider img{
     text-align: center;
-    height: auto;
     width: 100%;
     z-index: 3;
     box-shadow: 0 0 10px rgb(100, 100, 100);
+    margin: auto;
 }
   .sliderimg{
-    padding: 8%;
+    width: 1000px;
+    height: 450px;
+    margin: auto;
+    padding: 3%;
   }
 
 /*slick setting*/
@@ -129,7 +137,7 @@ button{
   margin-top: -15px;
 }
 .prev-arrow{
-  left: 340px;
+  left: 70px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
@@ -139,7 +147,7 @@ button{
   z-index: 7;
 }
 .next-arrow{
-  right: 340px;
+  right: 70px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
@@ -148,15 +156,15 @@ button{
   border-bottom: 35px solid transparent;
 }
 .feature{
-  width: 100%;
+  width: 1000px;
   margin: auto;
+  box-sizing:border-box
 }
 .featurebox{
   border-top: solid black 1px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 2% 0;
 }
 .featurebox h2{
   width: 100%;
@@ -167,25 +175,37 @@ button{
 .submenu2{
   list-style: none;
 }
-.slider2{
+ul.slider2{
   width: 100%;
   z-index: 3;
   padding: 4% 0;
   margin: auto;
 }
-.slider2 img{
-  text-align: center;
-  height: auto;
+.sliderimg2{
   width: 100%;
+  height: auto;
+  
+}
+ul.slider2 li{
+  padding: 0 25px;
+  margin: auto;
+}
+ul.slider2 img{
+  margin: auto;
+  text-align: center;
+  height: 250px;
+  width: 200px;
   box-shadow: 0 0 10px rgb(100, 100, 100);
+  
 }
 .staffstyle{
-  width: 100%;
+  width: 1000px;
   margin: auto;
+  box-sizing:border-box
 }
 .stylebox{
   border-top: solid black 1px;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 2% 0;
@@ -196,33 +216,84 @@ button{
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
 }
-ul.slider2{
+ul.slider3{
   width: 100%;
   z-index: 3;
   padding: 4% 0;
   margin: auto;
 }
-ul.slider2 img{
-  text-align: center;
-  height: auto;
+.sliderimg3{
   width: 100%;
-  box-shadow: 0 0 10px rgb(100, 100, 100);
+  height: auto;
+  
 }
-
+ul.slider3 li{
+  padding: 0 8px;
+  margin: auto;
+}
+ul.slider3 img{
+  margin: auto;
+  text-align: center;
+  height: 200px;
+  width: 150px;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+  
+}
+button{
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.slide2-arrow{
+  position: absolute;
+  top: 45%;
+  margin-top: -15px;
+}
+.prev2-arrow{
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid black;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  z-index: 7;
+}
+.next2-arrow{
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 20px solid black;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+}
 .news{
   width: 100%;
   margin: auto;
 }
+.news-2
+  {border-top: solid black 1px;
+   width: 70%;
+   margin: auto;
+   padding: 2% 0;
+  }
 .newsbox{
-  border-top: solid black 1px;
-  width: 70%;
   margin: 0 auto;
   text-align: center;
-  padding: 2% 0;
+  padding: 2% 0;;
+  display: flex;
 }
 .newsmain{
   width: 100%;
   border-radius: 20px;
+  margin: 0 auto;
 }
 .newsmain img{
   width: 100%;
@@ -239,11 +310,19 @@ ul.slider2 img{
   width: 20%;
   box-shadow: 0 0 10px rgb(100, 100, 100);
 }
-.newsbox h2{
-  width: 100%;
+.news h2{
   font-size: 2rem;
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
+  text-align: center;
+  margin: auto;
+}
+.newssub{
+  background-color: white;
+  width: 700px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
 }
 /*フッター*/
 .footerbox{

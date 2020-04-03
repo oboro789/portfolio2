@@ -3,19 +3,35 @@ $(function(){
     autoplay:true,
     autoplaySpeed:5000,
     dots:true,
-    centerMode: true,
-    centerPadding: '350px',
-    slidesToScroll: 7,
-    dots: true,
+    slidesToshow: 7,
+    slidesToScroll: 1,
     prevArrow:'<button class="slide-arrow prev-arrow"></button>',
     nextArrow:'<button class="slide-arrow next-arrow"></button>'
    });
    $('.slider2').slick({
     autoplay:false,
     autoplaySpeed:5000,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     slidesToshow: 4,
-    dots: false
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    centerMode: false,
+    centerPadding: '380px',
+    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
+    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+   });
+   $('.slider3').slick({
+    autoplay:false,
+    autoplaySpeed:5000,
+    slidesToScroll: 1,
+    slidesToshow: 6,
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    centerMode: false,
+    centerPadding: '380px',
+    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
+    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
    });
 });
-　
