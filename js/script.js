@@ -10,7 +10,6 @@ $(function(){
    });
    $('.slider2').slick({
     autoplay:false,
-    autoplaySpeed:5000,
     slidesToScroll: 1,
     slidesToshow: 4,
     dots: false,
@@ -23,7 +22,6 @@ $(function(){
    });
    $('.slider3').slick({
     autoplay:false,
-    autoplaySpeed:5000,
     slidesToScroll: 1,
     slidesToshow: 6,
     dots: false,
@@ -31,7 +29,7 @@ $(function(){
     variableWidth: true,
     centerMode: false,
     centerPadding: '380px',
-    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
-    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+    prevArrow:'<button class="slide3-arrow prev3-arrow"></button>',
+    nextArrow:'<button class="slide3-arrow next3-arrow"></button>'
    });
 });
