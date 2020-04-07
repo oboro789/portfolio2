@@ -101,8 +101,6 @@ body{
   ul.inner li:hover ul li{
       overflow: visible;
       height: 38px;
-      border-top: 1px solid #7c8c0e;
-      border-bottom: 1px solid #616d0b;
     }
   ul.inner li:hover ul li:first-child{
       border-top: 0;
@@ -430,6 +428,7 @@ button{
   transition: .3s;
   position: absolute;
   left: 3px;
+  border-radius: 5px;
 }
 .newsimg1:hover {
 	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
@@ -451,6 +450,7 @@ button{
   position: absolute;
   bottom: 0;
   left: 3px;
+  border-radius: 5px;
 }
 .newsimg2:hover {
 	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
@@ -472,6 +472,7 @@ button{
   position: absolute;
   top: 0;
   right: 25px;
+  border-radius: 5px;
 }
 .newsimg3:hover {
 	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
@@ -493,6 +494,7 @@ button{
   position: absolute;
   top: 330px;
   right: 25px;
+  border-radius: 5px;
 }
 .newsimg4:hover {
 	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
@@ -520,6 +522,122 @@ button{
   box-shadow: 0 0 10px rgb(100, 100, 100);
   margin-right: 10px;
 }
+.shoplist{
+  width: 1000px;
+  height: 800px;
+  margin: 0 auto;
+  padding: 2% 0;
+}
+.shoplistbox{
+  width: 100%;
+  border-top: solid black 1px;
+  margin: auto;
+  position: relative;
+}
+.shoplistbox h3{
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Roboto Slab', serif;
+}
+ul.listbox{
+  background-color:white;
+  width: 700px;
+  height: 700px;
+  margin: 7% auto;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+.searchbox{
+  margin: 5% 2%;
+}
+.search_container{
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  height: 2.6em;
+  width: 250px;
+  overflow: hidden;
+  background: white;
+  border: solid black 1px;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+  background: white;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: none;
+  background: none;
+  color: black;
+  position: absolute;
+  height: 2.5em;
+  right: 8px;
+  top: -5px;
+  outline : none;
+}
+.search_container ::-webkit-input-placeholder {
+  color: rgba(163, 163, 163, 0.877);
+}
+.search{
+  width: 400px;
+  height: 400px;
+  margin:  4% 0;
+}
+.searchbox2{
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.search ul{                         
+  width: 250px;
+  list-style: none;
+}
+.searchbox2 a{
+  text-decoration: none;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+}     
+ul.searchbox2 li{                           
+	line-height: 4rem;
+  text-align: center;
+  background-color: white;
+  font-size: 1.4rem;
+  border-radius: 5px;
+}
+.search ul li ul{                  
+  display: none; 
+}                     
+ul.searchbox2 li:hover ul {                   
+  display:block;
+}                       
+ul.searchbox2 li:hover{                     
+  border-bottom:none;
+}                 
+ul.searchbox2 li:hover{                      
+  background-color:rgba(255, 255, 255, 0.575);
+}               
+ul.searchbox2 li:hover ul li{                 
+  border-left:none; 
+}                   
+ul.searchbox2 li:hover ul a{                 
+	display:block;                       
+  background-color: rgba(255, 255, 255, 0.575);
+}             
+li.searchbox2 li ul li:hover{               
+  border-bottom:1px solid #000;
+} 
+.searchbox2 li ul li:hover ul li:last-child{    
+  border-bottom:1px solid #000;
+}       
 /*フッター*/
 .footerbox{
   width: 100%;
