@@ -13,14 +13,13 @@ body{
  .header{
    position: fixed;
    width: 100%;
-   z-index: 5;
+   z-index: 1000;
  } 
  .headerbox{
     background-color: #e8e5e3;
     width: 100%;
     height: 170px;
     text-align: center;
-  
   }
   .submenu{
     font-size: 1.5rem;
@@ -532,26 +531,21 @@ button{
   width: 100%;
   border-top: solid black 1px;
   margin: auto;
-  position: relative;
 }
 .shoplistbox h3{
   font-size: 2rem;
   text-align: center;
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
+  margin: 2% 0;
 }
-ul.listbox{
-  background-color:white;
-  width: 700px;
-  height: 700px;
-  margin: 7% auto;
-  list-style: none;
-  position: absolute;
-  top: 0;
-  right: 15px;
+.searchs{
+  width: 1000px;
+  position: relative;
 }
 .searchbox{
-  margin: 5% 2%;
+  width: 1000px;
+  padding-bottom: 300px;
 }
 .search_container{
   position: relative;
@@ -564,6 +558,7 @@ ul.listbox{
   overflow: hidden;
   background: white;
   border: solid black 1px;
+  top: 70px;
 }
 .search_container input[type="text"]{
   border: none;
@@ -589,55 +584,92 @@ ul.listbox{
 .search_container ::-webkit-input-placeholder {
   color: rgba(163, 163, 163, 0.877);
 }
-.search{
-  width: 400px;
-  height: 400px;
-  margin:  4% 0;
+.cp_tab *, .cp_tab *:before, .cp_tab *:after {
+	-webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.searchbox2{
-  box-shadow: 0 0 10px rgb(100, 100, 100);
+.cp_tab {
+  width: 100%;
+	margin: 4% auto;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(100, 100, 100);
 }
-.search ul{                         
+.cp_tab input[type='radio'] {
+	margin: 0;
+	padding: 0;
+  border: none;
+  border-radius: 0;
+	outline: none;
+	background: none;
+	-webkit-appearance: none;
+          appearance: none;
+  display: none;
+}
+.cp_tab .cp_tabpanel{
+	display: none;
+}
+.cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child,
+.cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2),
+.cp_tab > input:nth-child(5):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(3),
+.cp_tab > input:nth-child(7):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(4),
+.cp_tab > input:nth-child(10):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(5),
+.cp_tab > input:nth-child(12):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(6) {
+	display: block;
+}
+.cp_tab .cp_tabpanels {
+  position: absolute;
+	top:10px;
+	left: 250px;
+	display: block;
+}
+.cp_tab > input + label {
+	position: relative;
+  background: #ffffff;
+  z-index: 100;
+	display: block;
   width: 250px;
-  list-style: none;
-}
-.searchbox2 a{
-  text-decoration: none;
-  font-family: 'Roboto Slab', serif;
-  color: black;
-}     
-ul.searchbox2 li{                           
-	line-height: 4rem;
-  text-align: center;
-  background-color: white;
+  height: 60px;
+  top: 100px;
+	padding: 30px;
+  cursor: pointer;
+	border-right: 0;
   font-size: 1.4rem;
-  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px rgb(100, 100, 100)
 }
-.search ul li ul{                  
-  display: none; 
-}                     
-ul.searchbox2 li:hover ul {                   
-  display:block;
-}                       
-ul.searchbox2 li:hover{                     
-  border-bottom:none;
-}                 
-ul.searchbox2 li:hover{                      
-  background-color:rgba(255, 255, 255, 0.575);
-}               
-ul.searchbox2 li:hover ul li{                 
-  border-left:none; 
-}                   
-ul.searchbox2 li:hover ul a{                 
-	display:block;                       
-  background-color: rgba(255, 255, 255, 0.575);
-}             
-li.searchbox2 li ul li:hover{               
-  border-bottom:1px solid #000;
-} 
-.searchbox2 li ul li:hover ul li:last-child{    
-  border-bottom:1px solid #000;
-}       
+.cp_tab > input + label:last-of-type {
+	margin-bottom: 100px;
+}
+.cp_tab > label:hover,
+.cp_tab > input:focus + label {
+  color: black;
+  z-index: 50;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  box-shadow: rgb(100, 100, 100);
+}
+.cp_tab > input:checked + label {
+	border-color: #000000;
+}
+.cp_tab .cp_tabpanel {
+  position: absolute;
+  padding: 20px 40px;
+  width: 700px;
+  height: 700px;
+  background: white;
+  left: 30px;
+  box-shadow: 0 0 5px rgb(100, 100, 100);
+  border-radius: 8px;
+}
+.tokai1 img{
+  width: 200px;
+  height: 150px;
+}
+.kanto1 img{
+  width: 200px;
+  height: 150px;
+}      
 /*フッター*/
 .footerbox{
   width: 100%;
@@ -645,10 +677,8 @@ li.searchbox2 li ul li:hover{
   background-color: #7f7f7f;
 }
 
-  
- 
 
-  
+
  
 
 
