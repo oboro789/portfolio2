@@ -128,38 +128,52 @@ body{
     position: relative;
   }
   ul.subcontact li{
-    height: 50px;
     font-size: 2rem;
     color: black;
     z-index: 2;
     padding: 5% 0;
     list-style: none;
     display: flex;
-    -webkit-transition: all 0.2s;
-	  transition: all 0.2s;
+    margin: 20px;
+    transition: .2s;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    transition: .2s;
   }
-  ul.subcontact li :hover{
+  ul.subcontact li:hover a{
     box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
     transform: translateY(-4px);
+    display: block;
   }
   ul.subcontact li a{
     width: 100%;
     height: 0;
     position: absolute;
-    overflow: hidden;
-    background-color: blue;
+    text-decoration: none;
+    display: none;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    color: #07351c;
   }
   ul.subcontact li a:hover{
-    height: 100px;
-    width: 100%;
-    background-color: blue;
+    height: 30px;
+    width: 120px;
+    background-color: rgba(255,255,255,0.7);
+    color:teal 1.2rem;
+    display: block;
+    position: relative;
+    left: 10px;
+    font-size: 1.4rem;
+    border-radius: 0 5px 5px 0;
   }
    
   /*メイン*/
   .mainbox{
     padding-top: 165px;
     width: 100%;
-    height: auto;
+    height: 3100px;
     overflow: hidden;
     margin: auto;
     box-sizing:border-box；
@@ -539,6 +553,31 @@ button{
   font-family: 'Roboto Slab', serif;
   margin: 2% 0;
 }
+.searchbox i{
+  width: 250px;
+  text-align: left;
+  display: block;
+  margin-bottom: 1%;
+  font-size: 3.2rem;
+  display: inline-flex;
+}
+.searchbox p{
+  width: 200px;
+  text-align: left;
+  display: block;
+  margin-bottom: 1%;
+  font-size: 1.8rem;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-family: 'Roboto Slab', serif;
+}
+.searchcity{
+  width: 250px;
+  height: 50px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  padding: 1% 0;
+}
 .searchs{
   width: 1000px;
   position: relative;
@@ -547,39 +586,56 @@ button{
   width: 1000px;
   padding-bottom: 300px;
 }
+.searchs i{
+  width: 250px;
+  text-align: left;
+  display: block;
+  margin-bottom: 1%;
+  font-size: 3.2rem;
+  display: inline-flex;
+  position: absolute;
+  top: 10px;
+}
+.searchs p{
+  width: 200px;
+  text-align: left;
+  display: block;
+  margin-bottom: 1%;
+  font-size: 1.8rem;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-family: 'Roboto Slab', serif;
+}
 .search_container{
-  position: relative;
   box-sizing: border-box;
   display: block;
-  padding: 3px 10px;
-  border-radius: 20px;
-  height: 2.6em;
+  padding: 1px 10px;
+  border-radius: 10px;
+  height: 40px;
   width: 250px;
   overflow: hidden;
   background: white;
   border: solid black 1px;
-  top: 70px;
+  margin-top: 5px;
 }
 .search_container input[type="text"]{
   border: none;
-  height: 2.0em;
+  height: 3em;
   background: white;
+  font-size: 1.4rem;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
 }
 .search_container input[type="submit"]{
   cursor: pointer;
-  font-family: FontAwesome;
-  font-size: 1.3em;
+  font-size: 2rem;
   border: none;
   background: none;
   color: black;
-  position: absolute;
-  height: 2.5em;
-  right: 8px;
-  top: -5px;
+  height: 1px;
   outline : none;
+  font-family: none;
 }
 .search_container ::-webkit-input-placeholder {
   color: rgba(163, 163, 163, 0.877);
@@ -592,8 +648,6 @@ button{
   width: 100%;
 	margin: 4% auto;
   position: relative;
-  border-radius: 8px;
-  box-shadow: rgb(100, 100, 100);
 }
 .cp_tab input[type='radio'] {
 	margin: 0;
@@ -619,24 +673,23 @@ button{
 }
 .cp_tab .cp_tabpanels {
   position: absolute;
-	top:10px;
+  top:0;
+  display: block;
 	left: 250px;
-	display: block;
 }
 .cp_tab > input + label {
 	position: relative;
-  background: #ffffff;
   z-index: 100;
 	display: block;
   width: 250px;
+  top: 50px;
   height: 60px;
-  top: 100px;
 	padding: 30px;
   cursor: pointer;
 	border-right: 0;
   font-size: 1.4rem;
   text-align: center;
-  box-shadow: 0 0 5px rgb(100, 100, 100)
+  border-top: solid black 2px;
 }
 .cp_tab > input + label:last-of-type {
 	margin-bottom: 100px;
@@ -656,24 +709,83 @@ button{
   position: absolute;
   padding: 20px 40px;
   width: 700px;
-  height: 700px;
+  height: 850px;
   background: white;
   left: 30px;
   box-shadow: 0 0 5px rgb(100, 100, 100);
   border-radius: 8px;
+  top: -150px; 
+}
+.cp_tabpanel h3{
+  width: 600px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
+  text-decoration: initial;
+  text-align: left;
+  padding: 2% 10%;
+  font-size: 2.4rem;
+  margin: 0 auto;
+}
+.tokai1{
+  width: 600px;
+  height: 250px;
+  border-bottom: dashed black 1px;
+  position: relative;
+}
+.tokai1 h2{
+  width: 400px;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+.tokai1 p{
+  width: 230px;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 150px;
+  left: 50px;
+}
+.kanto1{
+  width: 600px;
+  height: 250px;
+  border-bottom: dashed black 1px;
+  position: relative;
+}
+.kanto1 h2{
+  width: 400px;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+.kanto1 p{
+  width: 230px;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 150px;
+  left: 50px;
 }
 .tokai1 img{
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
+  margin-left: 50px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
 }
 .kanto1 img{
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
+  margin-left: 50px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
 }      
 /*フッター*/
 .footerbox{
   width: 100%;
-  height: 1000px;
+  height: 500px;
   background-color: #7f7f7f;
 }
 
