@@ -40,6 +40,13 @@ body{
     height: 130px;
     margin-top: 1%;
   }
+  .logoimg:hover{
+    -webkit-filter: hue-rotate(180deg);
+     -moz-filter: hue-rotate(180deg);
+     -o-filter: hue-rotate(180deg);
+     -ms-filter: hue-rotate(180deg);
+     filter: hue-rotate(100deg);
+  }
   .boxmenu{
     width: 100%;
     margin: auto;
@@ -121,6 +128,7 @@ body{
     }
   .contactbox{
     width: 100%;
+    z-index: 500;
   }
   ul.subcontact{
     width: 150px;
@@ -181,17 +189,19 @@ body{
 } 
   .slider img{
     text-align: center;
-    width: 100%;
+    width: 1100px;
+    height: 500px;
     box-shadow: 0 0 10px rgb(100, 100, 100);
     margin: auto;
     
 }
   .sliderimg{
-    width: 1100px;
-    height: 450px;
+    width: 100%;
+    height: auto;
     margin: auto;
-    padding: 4% 0;
+    padding: 2% 0;
     object-fit: cover;
+    position: center center;
   }
 
 /*slick setting*/
@@ -216,10 +226,11 @@ button{
   left: 20px;
   width: 0;
   height: 0;
+  border: 0;
   border-left: 0 solid transparent;
   border-right: 20px solid rgb(185, 185, 185);
-  border-top: 35px double transparent;
-  border-bottom: 35px double transparent;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
   z-index: 30;
 }
 .prev-arrow:hover {
@@ -245,15 +256,41 @@ button{
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 .featurebox h2{
   width: 100%;
   font-size: 2rem;
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
+  padding-top: 2%;
 }
-.submenu2{
-  list-style: none;
+.tab_area label{
+  width:150px;
+  display:inline-block;
+  color:black;
+  font-size:1.6rem;
+  cursor:pointer;
+  transition:ease 0.2s opacity;
+  font-family: 'Amatic SC', cursive;
+}
+.tab_area label:hover{
+  opacity:0.5;
+}
+.tab_panel{
+  display:none;
+}
+.tab_area label:active{
+  background:#fff;
+  color:#000;
+}
+.tab_panel.active{
+  display: block;
+}
+.slider2{
+  width:100%;
+  padding: 4% 0;
+  margin: auto;
 }
 ul.slider2{
   width: 100%;
@@ -263,7 +300,6 @@ ul.slider2{
 .sliderimg2{
   width: 100%;
   height: auto;
-  
 }
 ul.slider2 li{
   padding: 0 25px;
@@ -287,7 +323,6 @@ button{
   -moz-appearance: none;
   appearance: none;
 }
-
 .slide2-arrow{
   position: absolute;
   top: 45%;
@@ -298,7 +333,7 @@ button:hover {
   transform: translateY(-4px);
 }
 .prev2-arrow{
-  left: 0px;
+  left: 0;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
@@ -528,7 +563,7 @@ button{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 30000;
+  z-index: 50000;
 }
 .modal__bg{
   background: rgba(0,0,0,0.8);
@@ -538,17 +573,18 @@ button{
   z-index: 20000;
 }
 .modal__content{
+  width: 1000px;
   padding: 40px;
   position: absolute;
   transform: translate(-50%,-50%);
-  z-index: 20000;
+  z-index: 25000;
 }
 .bignewsimg1{
-  width: 600px;
-  height: 800px;
+  width: 400px;
+  height: 600px;
   background-color: white;
   box-shadow: 0 0 10px rgb(100, 100, 100);
-  transition: .3s;
+  transition: .7s;
   position: absolute;
   top: 200px;
   left: 300px;
