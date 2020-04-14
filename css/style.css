@@ -252,7 +252,7 @@ button{
   box-sizing:border-box
 }
 .featurebox{
-  border-top: solid black 1px;
+  border-top: solid black 2px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -260,32 +260,66 @@ button{
 }
 .featurebox h2{
   width: 100%;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
   padding-top: 2%;
+  border-bottom: dashed black 1px;
+  padding-bottom: 2%;
+  background-color: rgb(212, 196, 172);
 }
-.tab_area label{
-  width:150px;
-  display:inline-block;
+ul.tab_area{
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display:inline-flex;
+  border-left: dashed black 1px;
+}
+ul.tab_area li{
+  width:200px;
   color:black;
   font-size:1.6rem;
   cursor:pointer;
-  transition:ease 0.2s opacity;
+  transition:ease 1s opacity;
   font-family: 'Amatic SC', cursive;
-}
-.tab_area label:hover{
-  opacity:0.5;
+  display: block;
+  padding: 0 2%;
+  border-right: dashed black 1px;
+} 
+.hide{
+  display: none;
 }
 .tab_panel{
-  display:none;
+  width: 1000px;
+  padding: 4% 0;
 }
-.tab_area label:active{
-  background:#fff;
-  color:#000;
+.tab_panel h3{
+  width: 80px;
+  background-color: rgb(109, 141, 201);
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 110px;
+  left: 25px;
 }
-.tab_panel.active{
-  display: block;
+.tab_panel h4{
+  width: 80px;
+  background-color: rgb(202, 108, 202);
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 110px;
+  right: 395px;
+}
+.tab_panel h5{
+  width: 80px;
+  background-color: rgb(202, 108, 202);
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 110px;
+  left: 25px;
 }
 .slider2{
   width:100%;
@@ -355,29 +389,32 @@ button:hover {
   width: 1000px;
   margin: auto;
   box-sizing:border-box
+  
 }
 .stylebox{
-  border-top: solid black 1px;
+  border-top: solid black 2px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 2% 0;
+  position: relative;
 }
 .stylebox h2{
-  width: 100%;
-  font-size: 2rem;
+  width: 1000px;
+  font-size: 2.4rem;
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
+  background-color: rgb(212, 196, 172);
+  padding: 2% 0;
+  border-bottom: dashed black 1px;
 }
 ul.slider3{
   width: 90%;
-  padding: 4% 0;
   margin: auto;
+  padding: 9% 0;
 }
 ul.sliderimg3{
   width: 100%;
   height: auto;
-  
 }
 ul.slider3 li{
   padding: 0 8px;
@@ -389,7 +426,58 @@ ul.slider3 img{
   height: 185px;
   width: 135px;
   box-shadow: 0 0 10px rgb(100, 100, 100);
-  
+}
+ul.tab_area2{
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display:inline-flex;
+  border-left: dashed black 1px;
+}
+ul.tab_area2 li{
+  width:200px;
+  color:black;
+  font-size:1.6rem;
+  cursor:pointer;
+  transition:ease 1s opacity;
+  font-family: 'Amatic SC', cursive;
+  display: block;
+  padding: 0 2%;
+  border-right: dashed black 1px;
+} 
+.hide2{
+  display: none;
+}
+.tab_panel2{
+  width: 1000px;
+}
+.tab_panel2 h3{
+  width: 80px;
+  background-color: rgb(109, 141, 201);
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 120px;
+  left: 60px;
+}
+.tab_panel2 h4{
+  width: 80px;
+  background-color: rgb(202, 108, 202);
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 120px;
+  right: 405px;
+}
+.tab_panel2 h5{
+  width: 80px;
+  background-color: rgb(202, 108, 202);
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top: 120px;
+  left: 60px;
 }
 
 button{
