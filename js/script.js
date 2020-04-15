@@ -32,6 +32,54 @@ $(function(){
     prevArrow:'<button class="slide3-arrow prev3-arrow"></button>',
     nextArrow:'<button class="slide3-arrow next3-arrow"></button>'
    });
+   $('.slider4').slick({
+    autoplay:false,
+    slidesToScroll: 1,
+    slidesToshow: 4,
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    centerMode: false,
+    centerPadding: '380px',
+    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
+    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+   });
+   $('.slider5').slick({
+    autoplay:false,
+    slidesToScroll: 1,
+    slidesToshow: 4,
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    centerMode: false,
+    centerPadding: '380px',
+    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
+    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+   });
+   $('.slider6').slick({
+    autoplay:false,
+    slidesToScroll: 1,
+    slidesToshow: 6,
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    centerMode: false,
+    centerPadding: '380px',
+    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
+    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+   });
+   $('.slider7').slick({
+    autoplay:false,
+    slidesToScroll: 1,
+    slidesToshow: 7,
+    dots: false,
+    arrows: true,
+    variableWidth: true,
+    centerMode: false,
+    centerPadding: '380px',
+    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
+    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+   });
 });
 $(function(){
     $('.js-modal-open').each(function(){
@@ -58,6 +106,13 @@ $(function(){
         $('.tab_panel2').css('display','none');
         $('.tab_panel2').eq(index).fadeIn();
         $('ul.tab_area2 li').removeClass('select');
+        $(this).addClass('select')
+    });
+    $('ul.tab_area3 li').click(function(){
+        var index = $('ul.tab_area3 li').index(this);
+        $('.tab_panel3').css('display','none');
+        $('.tab_panel3').eq(index).fadeIn();
+        $('ul.tab_area3 li').removeClass('select');
         $(this).addClass('select')
     });
 });

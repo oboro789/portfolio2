@@ -29,6 +29,7 @@ body{
     position: absolute;
     left: 0;
     top:10px;
+    z-index: 10;
   }
   .boxlogo {
     background-color: #e8e5e3;
@@ -127,14 +128,14 @@ body{
       height: 40px;
     }
   .contactbox{
-    width: 100%;
-    z-index: 500;
+    width: 150px;
+    z-index: 50;
   }
   ul.subcontact{
     width: 150px;
-    height: 100px;
     margin: 1%;
     position: relative;
+    z-index: 1;
   }
   ul.subcontact li{
     font-size: 2rem;
@@ -143,7 +144,7 @@ body{
     list-style: none;
     display: flex;
     margin: 20px;
-    
+    z-index: 1;
   }
   ul.subcontact li:hover a{
     transform: translateY(-4px);
@@ -166,13 +167,14 @@ body{
     display: none;
     font-size: 1.2rem;
     color: #07351c;
+    z-index: 11;
   }
    
   /*メイン*/
   .mainbox{
     padding-top: 165px;
     width: 100%;
-    height: 3100px;
+    height: auto;
     overflow: hidden;
     margin: auto;
     box-sizing:border-box；
@@ -248,8 +250,10 @@ button{
 }
 .feature{
   width: 1000px;
+  height: 500px;
   margin: auto;
   box-sizing:border-box
+
 }
 .featurebox{
   border-top: solid black 2px;
@@ -310,7 +314,7 @@ ul.tab_area li{
   font-family: 'Amatic SC', cursive;
   position: absolute;
   top: 110px;
-  right: 395px;
+  right: 375px;
 }
 .tab_panel h5{
   width: 80px;
@@ -321,15 +325,24 @@ ul.tab_area li{
   top: 110px;
   left: 25px;
 }
-.slider2{
-  width:100%;
-  padding: 4% 0;
-  margin: auto;
-}
 ul.slider2{
   width: 100%;
   padding: 4% 0;
   margin: auto;
+}
+ul.slider4{
+  width: 480px;
+  padding: 4% 0;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+ul.slider5{
+  width: 480px;
+  padding: 4% 0;
+  position: absolute;
+  top: 100px;
+  right: 0;
 }
 .sliderimg2{
   width: 100%;
@@ -340,6 +353,32 @@ ul.slider2 li{
   margin: auto;
 }
 ul.slider2 img{
+  margin: auto;
+  text-align: center;
+  height: 250px;
+  width: 200px;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.sliderimg4{
+  width: 100%;
+  height: auto;
+}
+ul.slider4 li{
+  padding: 0 20px;
+  margin: auto;
+}
+ul.slider4 img{
+  margin: auto;
+  text-align: center;
+  height: 250px;
+  width: 200px;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+ul.slider5 li{
+  padding: 0 20px;
+  margin: auto;
+}
+ul.slider5 img{
   margin: auto;
   text-align: center;
   height: 250px;
@@ -387,6 +426,7 @@ button:hover {
 }
 .staffstyle{
   width: 1000px;
+  height: 500px;
   margin: auto;
   box-sizing:border-box
   
@@ -408,8 +448,7 @@ button:hover {
   border-bottom: dashed black 1px;
 }
 ul.slider3{
-  width: 90%;
-  margin: auto;
+  width: 1000px;
   padding: 9% 0;
 }
 ul.sliderimg3{
@@ -421,6 +460,50 @@ ul.slider3 li{
   margin: auto;
 }
 ul.slider3 img{
+  margin: auto;
+  text-align: center;
+  height: 185px;
+  width: 135px;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+ul.slider6{
+  width: 500px;
+  margin: auto;
+  padding: 9% 0;
+  position: absolute;
+  top: 90px;
+}
+ul.sliderimg6{
+  width: 100%;
+  height: auto;
+}
+ul.slider6 li{
+  padding: 0 8px;
+  margin: auto;
+}
+ul.slider6 img{
+  margin: auto;
+  text-align: center;
+  height: 185px;
+  width: 135px;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+ul.slider7{
+  width: 500px;
+  margin: auto;
+  padding: 8% 0;
+  position: absolute;
+  top: 90px;
+}
+ul.sliderimg7{
+  width: 100%;
+  height: auto;
+}
+ul.slider7 li{
+  padding: 0 8px;
+  margin: auto;
+}
+ul.slider7 img{
   margin: auto;
   text-align: center;
   height: 185px;
@@ -479,7 +562,6 @@ ul.tab_area2 li{
   top: 120px;
   left: 60px;
 }
-
 button{
   margin: 0;
   padding: 0;
@@ -520,28 +602,16 @@ button{
   margin: auto;
 }
 .news-2{
-   border-top: solid black 1px;
    width: 100%;
+   border-top: solid black 1px;
    margin: auto;
-   padding: 2% 0;
   }
 .newsbox{
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 2% 0;;
   display: flex;
-}
-.newsmain{
-  width: 1000px;
-  height: 650px;
-  border-radius: 20px;
-  margin: 0 auto;
-  position: relative;
-  left: 10px;
-}
-.newsmain img{
-  width: 100%;
+  padding: 5% 0;
 }
 .newsimg1{
   width: 250px;
@@ -550,7 +620,7 @@ button{
   box-shadow: 0 0 10px rgb(100, 100, 100);
   transition: .3s;
   position: absolute;
-  left: 3px;
+  left: 2px;
   border-radius: 5px;
 }
 .newsimg1:hover {
@@ -572,7 +642,7 @@ button{
   transition: .3s;
   position: absolute;
   bottom: 0;
-  left: 3px;
+  left: 2px;
   border-radius: 5px;
 }
 .newsimg2:hover {
@@ -631,14 +701,18 @@ button{
   margin: 20px 0;
 }
 .news h2{
-  font-size: 2rem;
+  width: 1000px;
+  font-size: 2.4rem;
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
   text-align: center;
   margin: auto;
+  background-color: rgb(212, 196, 172);
+  border-bottom: dashed black 1px;
+  padding: 2% 0;
 }
 .newscontent{
-  width: 1000px;
+  width: 750px;
   height: 650px;
   border-radius: 20px;
   margin: 0 auto;
@@ -675,7 +749,7 @@ button{
   transition: .7s;
   position: absolute;
   top: 200px;
-  left: 300px;
+  left: 2px;
   border-radius: 5px;
 }
 .bignewsimg1 img{
@@ -692,7 +766,7 @@ button{
   transition: .3s;
   position: absolute;
   top: 200px;
-  left: 300px;
+  left: 2px;
   border-radius: 5px;
 }
 .bignewsimg2 img{
@@ -737,278 +811,15 @@ button{
 }
 .newssub{
   background-color: white;
-  width: 800px;
+  width: 700px;
   height: 650px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(100, 100, 100);
-  margin-right: 10px;
+  margin-right: 2%;
 }
-.shoplist{
-  width: 1000px;
-  height: 800px;
-  margin: 0 auto;
-  padding: 2% 0;
-}
-.shoplistbox{
-  width: 100%;
-  border-top: solid black 1px;
-  margin: auto;
-}
-.shoplistbox h3{
-  font-size: 2rem;
-  text-align: center;
-  text-decoration: underline;
-  font-family: 'Roboto Slab', serif;
-  margin: 2% 0;
-}
-.searchbox i{
-  width: 250px;
-  text-align: left;
-  display: block;
-  margin-bottom: 1%;
-  font-size: 3.2rem;
-  display: inline-flex;
-}
-.searchbox p{
-  width: 200px;
-  text-align: left;
-  display: block;
-  margin-bottom: 1%;
-  font-size: 1.8rem;
-  padding-top: 8px;
-  padding-left: 10px;
-  font-family: 'Roboto Slab', serif;
-}
-.searchcity{
-  width: 250px;
-  height: 50px;
-  border-top: solid black 2px;
-  border-bottom: solid black 2px;
-  padding: 1% 0;
-}
-.searchs{
-  width: 1000px;
-  position: relative;
-}
-.searchbox{
-  width: 1000px;
-  padding-bottom: 300px;
-}
-.searchs i{
-  width: 250px;
-  height: 40px;
-  text-align: left;
-  display: block;
-  margin-bottom: 1%;
-  font-size: 3.2rem;
-  display: inline-flex;
-  position: absolute;
-  top: 10px;
-  border-bottom: solid black 2px;;
-}
-.searchs p{
-  width: 200px;
-  text-align: left;
-  display: block;
-  margin-bottom: 1%;
-  font-size: 1.8rem;
-  padding-top: 8px;
-  padding-left: 10px;
-  font-family: 'Roboto Slab', serif;
-}
-.search_container{
-  box-sizing: border-box;
-  display: block;
-  padding: 1px 10px;
-  border-radius: 10px;
-  height: 40px;
-  width: 250px;
-  overflow: hidden;
-  background: white;
-  border: solid black 1px;
-  margin-top: 5px;
-}
-.search_container input[type="text"]{
-  border: none;
-  height: 3em;
-  background: white;
-  font-size: 1.4rem;
-}
-.search_container input[type="text"]:focus {
-  outline: 0;
-}
-.search_container input[type="submit"]{
-  cursor: pointer;
-  font-size: 2rem;
-  border: none;
-  background: none;
-  color: black;
-  height: 1px;
-  outline : none;
-  font-family: none;
-}
-.search_container ::-webkit-input-placeholder {
-  color: rgba(163, 163, 163, 0.877);
-}
-.cp_tab *, .cp_tab *:before, .cp_tab *:after {
-	-webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.cp_tab {
-  width: 250px;
-  height: 290px;
-  margin-top: 4%;
-  position: relative;
-  border-bottom: solid black 2px;
-}
-.yazirusi::before{
-  font-family: FontAwesome;
-  content: '\f0da';
-  font-size: 1.4rem;
-  display: none;
-}
-.cp_tab input[type='radio'] {
-	margin: 0;
-	padding: 0;
-  border: none;
-  border-radius: 0;
-	outline: none;
-	background: none;
-	-webkit-appearance: none;
-          appearance: none;
-  display: none;
-}
-.cp_tab .cp_tabpanel{
-  display: none;
-}
-.cp_tab > input:first-child:checked ~ .cp_tabpanels > .cp_tabpanel:first-child,
-.cp_tab > input:nth-child(3):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(2),
-.cp_tab > input:nth-child(5):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(3),
-.cp_tab > input:nth-child(7):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(4),
-.cp_tab > input:nth-child(10):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(5),
-.cp_tab > input:nth-child(12):checked ~ .cp_tabpanels > .cp_tabpanel:nth-child(6){
-	display: block;
-}
-.cp_tab .cp_tabpanels{
-  position: absolute;
-  top:0;
-  display: block;
-  left: 250px;
-}
-.cp_tab > input + label{
-	position: relative;
-  z-index: 100;
-  display: block;
-  width: 180px;
-  top: 50px;
-  height: 40px;
-  padding: 4% 0;
-  padding-left: 20%;
-  cursor: pointer;
-	border-right: 0;
-  font-size: 1.4rem;
-  border-top: solid rgb(53, 47, 47) 1px;
-  transition: 10s;
-}
-.cp_tab > input + label:last-of-type {
-	margin-bottom: 100px;
-}
-.cp_tab > label:hover,
-.cp_tab > input:focus + label{
-  color: black;
-  text-decoration: underline;
-  font-size: 1.4rem;
-  box-shadow: rgb(100, 100, 100);
-}
-.yazirusi:hover:before{
-  display: block;
-  z-index: 50;
-  position: absolute;
-  left: 30px;
-  font-size: 2rem;
-}
-.cp_tab > input:checked + label {
-	border-color: #000000;
-}
-.cp_tab .cp_tabpanel {
-  position: absolute;
-  padding: 20px 40px;
-  width: 700px;
-  height: 850px;
-  background: white;
-  left: 30px;
-  box-shadow: 0 0 5px rgb(100, 100, 100);
-  border-radius: 8px;
-  top: -150px;
-}
-.cp_tabpanel h3{
-  width: 600px;
-  border-top: solid black 2px;
-  border-bottom: solid black 2px;
-  text-decoration: initial;
-  text-align: left;
-  padding: 2% 10%;
-  font-size: 2.4rem;
-  margin: 0 auto;
-}
-.tokai1{
-  width: 600px;
-  height: 250px;
-  border-bottom: dashed black 1px;
-  position: relative;
-}
-.tokai1 h2{
-  width: 400px;
-  font-size: 1.6rem;
-  position: absolute;
-  top: 20px;
-  left: 60px;
-}
-.tokai1 p{
-  width: 230px;
-  font-size: 1.4rem;
-  position: absolute;
-  top: 150px;
-  left: 50px;
-}
-.kanto1{
-  width: 600px;
-  height: 250px;
-  border-bottom: dashed black 1px;
-  position: relative;
-}
-.kanto1 h2{
-  width: 400px;
-  font-size: 1.6rem;
-  position: absolute;
-  top: 20px;
-  left: 60px;
-}
-.kanto1 p{
-  width: 230px;
-  font-size: 1.4rem;
-  position: absolute;
-  top: 150px;
-  left: 50px;
-}
-.tokai1 img{
-  width: 300px;
-  height: 200px;
-  margin-left: 50px;
-  position: absolute;
-  top: 20px;
-  right: 5px;
-}
-.kanto1 img{
-  width: 300px;
-  height: 200px;
-  margin-left: 50px;
-  position: absolute;
-  top: 20px;
-  right: 5px;
-} 
+
 /*コンセプト*/
- .conseptbox{
+.conseptbox{
    width: 1000px;
    margin: auto;
    text-align: center;
@@ -1032,23 +843,126 @@ button{
  }
  /*フューチャー*/
  /*all*/
- .shoplist{
+ .feature_allbox{
   width: 1000px;
   height: 800px;
   margin: 0 auto;
   padding: 2% 0;
 }
-.shoplistbox{
-  width: 100%;
-  border-top: solid black 1px;
+.feature_all{
+  width: 1000px;
   margin: auto;
 }
-.shoplistbox h3{
+.feature_all h3{
+  width: 1000px;
   font-size: 2rem;
   text-align: center;
   text-decoration: underline;
   font-family: 'Roboto Slab', serif;
+  padding: 2% 0;
+  background-color: rgb(212, 196, 172);
+  border-bottom: solid black 2px
+}
+.topturn2{
+  width: 1000px;
+  padding: 1% 0;
+  border-top: dashed black 1px;
+  border-bottom: dashed black 1px;
+  display: inline-flex;
+  margin: auto;
+  margin-top: 1%;
+}
+.features_all{
+  width: 850px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 150px
+}
+.features_all h4{
+  width: 200px;
+  margin-bottom: 1%;
+  font-size: 4rem;
+  font-family: 'Amatic SC', cursive;
+  position: absolute;
+  top:20px;
+  left: 40px;
+}
+.features_all h5{
+  width: 250px;
+  margin:0 auto;
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-left: dashed black 1px;
+  border-right: dashed black 1px;
+  position: absolute;
+  top: 40px;
+  left: 150px;
+}
+.features_men{
+  width: 600x;
+  height: 600px;
+  border-bottom: dashed black 1px;
+}
+.tab_wrap2{
+  width: 1000px;
+  position: relative;
+}
+.searchbox{
+  width: 1000px;
+  padding-bottom: 300px;
+}
+ul.tab_area3{
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+ul.tab_area3 li{
+  width:100px;
+  height: 100px;
+  color:black;
+  font-size:1.6rem;
+  cursor:pointer;
+  transition:ease 1s opacity;
+  font-family: 'Amatic SC', cursive;
+  display: block;
+  border-right: dashed black 1px;
+} 
+.hide3{
+  display: none;
+}
+.tab_panel3{
+  width: 1000px;
+}
+/*shoplist*/
+.shoplist{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.shoplistbox{
+  width: 100%;
+  margin: auto;
+}
+.topturn{
+  width: 1000px;
+  padding: 1% 0;
+  border-top: dashed black 1px;
+  border-bottom: dashed black 1px;
+  display: inline-flex;
+  margin: auto;
+}
+.shoplistbox h3{
+  font-size: 2.6rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Roboto Slab', serif;
   margin: 2% 0;
+  border-bottom: solid black 2px;
+  padding: 2% 0;
+  background-color: rgb(212, 196, 172);
 }
 .searchbox i{
   width: 250px;
@@ -1230,7 +1144,7 @@ button{
   border-radius: 8px;
   top: -150px;
 }
-.cp_tabpanel h3{
+.cp_tabpanel h4{
   width: 600px;
   border-top: solid black 2px;
   border-bottom: solid black 2px;
