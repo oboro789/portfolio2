@@ -133,6 +133,7 @@ body{
   }
   ul.subcontact{
     width: 150px;
+    height: 0;
     margin: 1%;
     position: relative;
     z-index: 1;
@@ -148,7 +149,7 @@ body{
   }
   ul.subcontact li:hover a{
     transform: translateY(-4px);
-    height: 25px;
+    height: 0;
     width: 120px;
     display: block;
     background-color: rgba(255,255,255,0.7);
@@ -334,14 +335,14 @@ ul.slider4{
   width: 480px;
   padding: 4% 0;
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 0;
 }
 ul.slider5{
   width: 480px;
   padding: 4% 0;
   position: absolute;
-  top: 100px;
+  top: 120px;
   right: 0;
 }
 .sliderimg2{
@@ -467,11 +468,12 @@ ul.slider3 img{
   box-shadow: 0 0 10px rgb(100, 100, 100);
 }
 ul.slider6{
-  width: 500px;
+  width: 450px;
   margin: auto;
   padding: 9% 0;
   position: absolute;
   top: 90px;
+  left: 20px;
 }
 ul.sliderimg6{
   width: 100%;
@@ -489,11 +491,12 @@ ul.slider6 img{
   box-shadow: 0 0 10px rgb(100, 100, 100);
 }
 ul.slider7{
-  width: 500px;
+  width: 450px;
   margin: auto;
   padding: 8% 0;
   position: absolute;
-  top: 90px;
+  top: 100px;
+  right: 20px;
 }
 ul.sliderimg7{
   width: 100%;
