@@ -28,7 +28,7 @@ $(function(){
     arrows: true,
     variableWidth: true,
     centerMode: false,
-    centerPadding: '380px',
+    centerPadding: '100px',
     prevArrow:'<button class="slide3-arrow prev3-arrow"></button>',
     nextArrow:'<button class="slide3-arrow next3-arrow"></button>'
    });
@@ -63,10 +63,10 @@ $(function(){
     dots: false,
     arrows: true,
     variableWidth: true,
-    centerMode: false,
-    centerPadding: '380px',
-    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
-    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+    centerMode: true,
+    centerPadding: '200px',
+    prevArrow:'<button class="slide4-arrow prev4-arrow"></button>',
+    nextArrow:'<button class="slide4-arrow next4-arrow"></button>'
    });
    $('.slider7').slick({
     autoplay:false,
@@ -75,10 +75,10 @@ $(function(){
     dots: false,
     arrows: true,
     variableWidth: true,
-    centerMode: false,
-    centerPadding: '380px',
-    prevArrow:'<button class="slide2-arrow prev2-arrow"></button>',
-    nextArrow:'<button class="slide2-arrow next2-arrow"></button>'
+    centerMode: true,
+    centerPadding: '200px',
+    prevArrow:'<button class="slide4-arrow prev4-arrow"></button>',
+    nextArrow:'<button class="slide4-arrow next4-arrow"></button>'
    });
 });
 $(function(){
