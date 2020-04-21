@@ -1006,13 +1006,14 @@ ul.newslist a:hover{
   height: auto;
   margin: 0 auto;
   position: relative;
-  
+  overflow: hidden;
 }
 .feature_all{
   width: 1000px;
   height: auto;
   margin: auto;
   background-color: #fff;
+  margin-bottom: 8%;
 }
 .feature_all h3{
   width: 1000px;
@@ -1037,32 +1038,43 @@ ul.newslist a:hover{
   width: 880px;
   height: auto;
   background-color: white;
-  position: absolute;
-  top: 160px;
-  right: 5px;
+  text-align: center;
 }
 .features_all h4{
-  width: 200px;
+  width: 100px;
   margin-bottom: 1%;
   font-size: 4rem;
   font-family: 'Amatic SC', cursive;
+  float: left;
+  padding-top: 1%;
 }
 .features_all h5{
-  width: 250px;
+  width: 150px;
   height: auto;
-  text-align: center;
   font-size: 2.4rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border-left: dashed black 1px;
   border-right: dashed black 1px;
+  display: inline-flex;
+  margin: 3% 0;
+  padding: 0 5%;
 }
 .allmen{
-  width: 700px;
+  width: 800px;
+  height: auto;
   list-style: none;
+  margin-top: 2%;
+  padding-bottom: 5%;
+}
+.allmen::after{
+  content: "";
+	display: block;
+	clear: both;
 }
 .allmen li{
   height: auto;
   display: inline-flex;
+  padding: 2%;
 }
 .allmen img{
   width: 150px;
@@ -1081,17 +1093,13 @@ ul.newslist a:hover{
   width: 150px;
   height: 200px;
 }
-.features_men{
-  width: 600x;
-  height: 600px;
-  border-bottom: dashed black 1px;
-}
 .tab_wrap2{
   width: 1000px;
+  display: inline-flex;
 }
-.searchbox{
+.panel_area3{
   width: 1000px;
-  padding-bottom: 300px;
+  display: inline-flex;
 }
 ul.tab_area3{
   width: 200px;
@@ -1400,8 +1408,7 @@ footer{
   width: 1000px;
   height: auto;
   display: inline-flex;
-  margin-top: 4%;
-  margin-left: 6%;
+  margin: 4% auto 0 5%;
 }
 .footerbox a{
   width: 200px;
@@ -1428,6 +1435,7 @@ ul.footlist1{
 }
 ul.footlist1 li{
   padding-bottom: 20%;
+  text-align: left; 
 }
 .foot2{
   width: 200px;
@@ -1480,11 +1488,12 @@ ul.footlist5{
 .company{
   width: 1000px;
   height: auto;
-  padding-bottom: 0;
   position: absolute;
   bottom: 0;
 }
 .company h2{
+  margin-right: 80px;
+  text-align: center;
   height: auto;
   font-size: 1rem;
   color: #fff;
