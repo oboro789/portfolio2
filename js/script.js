@@ -116,3 +116,10 @@ $(function(){
         $(this).addClass('select')
     });
 });
+$(function(){
+    $(".all li").hover(function(){
+       $(".mask",this).stop().animate({top:"0px"},"fast");
+    },function(){
+       $(".mask",this).stop().animate({top:"227px"},"slow");
+    });
+ });
