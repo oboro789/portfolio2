@@ -197,7 +197,7 @@ ul.subcontact li a{
     box-shadow: 0 0 10px rgb(100, 100, 100);
     margin: auto;
 }
-.sliderimg{
+.sliderimg1{
     width: 100%;
     height: auto;
     margin: auto;
@@ -322,31 +322,20 @@ ul.tab_area li{
     top: 110px;
     left: 25px;
 }
-ul.slider2{
-    width: 100%;
-    padding: 4% 0;
-    margin: auto;
-}
-ul.slider4{
-    width: 480px;
-    padding: 4% 0;
-    position: absolute;
-    top: 120px;
-    left: 0;
-}
-ul.slider5{
-    width: 480px;
-    padding: 4% 0;
-    position: absolute;
-    top: 120px;
+ul.allwomen1{
     right: 0;
 }
-.sliderimg2{
+.sliderimg_all{
     width: 100%;
     height: auto;
 }
+ul.slider2{
+    width: 480px;
+    padding: 4% 0;
+    position: absolute;
+}
 ul.slider2 li{
-    padding: 0 25px;
+    padding: 0 20px;
     margin: auto;
 }
 ul.slider2 img{
@@ -356,26 +345,16 @@ ul.slider2 img{
     width: 200px;
     box-shadow: 0 0 10px rgb(100, 100, 100);
 }
-.sliderimg4{
+ul.slider3{
     width: 100%;
-    height: auto;
-}
-ul.slider4 li{
-    padding: 0 20px;
+    padding: 4% 0;
     margin: auto;
 }
-ul.slider4 img{
-    margin: auto;
-    text-align: center;
-    height: 250px;
-    width: 200px;
-    box-shadow: 0 0 10px rgb(100, 100, 100);
-}
-ul.slider5 li{
-    padding: 0 20px;
+ul.slider3 li{
+    padding: 0 25px;
     margin: auto;
 }
-ul.slider5 img{
+ul.slider3 img{
     margin: auto;
     text-align: center;
     height: 250px;
@@ -444,7 +423,7 @@ button:hover {
     padding: 2% 0;
     border-bottom: dashed black 1px;
 }
-ul.slider3{
+ul.slider5{
     width: 1000px;
     padding: 9% 5%;
 }
@@ -452,11 +431,11 @@ ul.sliderimg3{
     width: 100%;
     height: auto;
 }
-ul.slider3 li{
+ul.slider5 li{
     padding: 0 8px;
     margin: auto;
 }
-ul.slider3 img{
+ul.slider5 img{
     margin: auto;
     text-align: center;
     height: 185px;
@@ -468,39 +447,18 @@ ul.slider3 img{
     height: auto;
     display: inline-flex;
 }
-ul.slider6{
+ul.slider4{
     width: 48%;
     padding: 10% 1%;
 }
-ul.sliderimg6{
-    width: 100%;
-    height: auto;
-}
-ul.slider6 li{
-    padding: 0 10px;
-    margin: auto;
-}
-ul.slider6 img{
-    margin: auto;
-    text-align: center;
-    height: 185px;
-    width: 135px;
-    box-shadow: 0 0 10px rgb(100, 100, 100);
-}
-ul.slider7{
-    width: 48%;
+ul.allwomen2{
     margin: 0 2%;
-    padding: 10% 1%;
 }
-ul.sliderimg7{
-    width: 100%;
-    height: auto;
-}
-ul.slider7 li{
+ul.slider4 li{
     padding: 0 10px;
     margin: auto;
 }
-ul.slider7 img{
+ul.slider4 img{
     margin: auto;
     text-align: center;
     height: 185px;
@@ -667,8 +625,13 @@ button{
     background-color: black;
     color: #fff;
     border: dashed black 1px;
-    margin-left: 60%;
     margin-bottom: 1%;
+    border-radius: 0 2px 0 0;
+    display: inline-block;
+    text-align: center;
+}
+.img_box{
+    text-align: center;
 }
 .js-modal-open{
     width: 250px;
@@ -683,6 +646,7 @@ button{
     box-shadow: 0 0 10px rgb(100, 100, 100);
     transition: .3s;
     border-radius: 5px;
+    text-align: right;
 }
 .shop1,.infomation1{
     padding-bottom: 15%;
@@ -694,7 +658,7 @@ button{
     padding-bottom: 9%;
 }
 .newsimg:hover{
-	  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+	box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
     transform: translateY(-4px);
     border: solid black 2px;
 }
@@ -760,8 +724,9 @@ button{
     font-size: 1.4rem;
     color: #fff;
     border: dashed black 1px;
-    margin-left: 70%;
-    margin-bottom: 1%;
+    border-radius: 0 2px 0 0;
+    display: inline-block;
+    text-align: center;
 }
 .modal__content p{
     width: 100%;
@@ -784,6 +749,7 @@ button{
     bottom: 0;
     margin: 0 auto;
     transform: translateY(10%);
+    text-align: right;
 }
 .bignewsimg img{
     width: 90%;
