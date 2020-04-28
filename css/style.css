@@ -913,9 +913,6 @@ ul.newslist a:hover{
     z-index: 60;
     text-align: center;
 }
-.ft_men{
-    display: inline-flex;
-}
 .bigimg-men{
     width: 300px;
     height: 400px;
